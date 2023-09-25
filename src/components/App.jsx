@@ -1,9 +1,9 @@
-import { Profile } from '../components/Profile/Profile'
-import { Statistics } from '../components/Statistics/Statistics'
-import { FriendList} from '../components/FriendList/FriendList'
-import user from '../data-files/user.json';
-import data from '../data-files/data.json';
-import friends from '../data-files/friends.json';
+import { Profile } from 'components/Profile/Profile'
+import { Statistics } from 'components/Statistics/Statistics'
+import { FriendList} from 'components/FriendList/FriendList'
+import user from 'data-files/user.json';
+import data from 'data-files/data.json';
+import friends from 'data-files/friends.json';
 import transactions from '../data-files/transactions.json';
 
 export const App = () => {
