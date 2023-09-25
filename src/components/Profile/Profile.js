@@ -1,13 +1,19 @@
-import user from '/src/components/user.json';
-import ReactDOM from 'react-dom/client';
+import PropTypes from 'prop-types';
+import defaultImg from '../Profile/img/no-user-image.gif';
 
-function Profile({ username, tag, location, avatar, stats }) {
+export function Profile({
+  username,
+  tag,
+  location,
+  avatar = defaultImg,
+  stats,
+}) {
   return (
     <div class="profile">
       <div class="description">
         <img src={avatar} alt="User avatar" class="avatar" />
         <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
+        <p class="tag">@{tag}</p>
         <p class="location">{location}</p>
       </div>
 
@@ -29,13 +35,14 @@ function Profile({ username, tag, location, avatar, stats }) {
   );
 }
 
-ReactDOM.render(
-  <Profile
-    username={user.username}
-    tag={user.tag}
-    location={user.location}
-    avatar={user.avatar}
-    stats={user.stats}
-  />,
-  document.querySelector('#root')
-);
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+  }).isRequired,
+};
