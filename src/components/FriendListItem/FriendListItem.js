@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-export function FriendListItem({ avatar, name, isOnline }) {
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li class="item">
       <span class="status">{isOnline}</span>
@@ -8,10 +8,10 @@ export function FriendListItem({ avatar, name, isOnline }) {
       <p class="name">{name}</p>
     </li>
   );
-}
-
-FriendListItem.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
 };
+
+// FriendListItem.propTypes = {
+//   avatar: PropTypes.string.isRequired,
+//   name: PropTypes.string.isRequired,
+//   isOnline: PropTypes.bool.isRequired,
+// };

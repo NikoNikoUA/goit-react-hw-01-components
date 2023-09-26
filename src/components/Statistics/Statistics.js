@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export function Statistics({ title, statistics }) {
   const isTitle = true;
@@ -19,13 +19,13 @@ export function Statistics({ title, statistics }) {
   );
 }
 
-Statistics.propTypes = {
-  title: PropTypes.string,
-  statistics: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
-    }).isRequired
-  ),
-};
+// Statistics.propTypes = {
+//   title: PropTypes.string,
+//   statistics: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string.isRequired,
+//       label: PropTypes.string.isRequired,
+//       percentage: PropTypes.number.isRequired,
+//     }).isRequired
+//   ),
+// };
