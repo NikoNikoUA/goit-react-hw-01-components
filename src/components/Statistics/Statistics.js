@@ -1,5 +1,3 @@
-// import PropTypes from 'prop-types';
-
 import css from './Statistics.module.css';
 
 export function Statistics({ title, statistics }) {
@@ -32,14 +30,3 @@ export function Statistics({ title, statistics }) {
     </section>
   );
 }
-
-// Statistics.propTypes = {
-//   title: PropTypes.string,
-//   statistics: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//     }).isRequired
-//   ),
-// };
