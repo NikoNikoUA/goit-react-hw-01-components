@@ -3,13 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
 
   width: 300px;
   height: 400px;
   border-radius: 15px;
-  box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
   background-color: rgb(244, 240, 240);
 }
 
