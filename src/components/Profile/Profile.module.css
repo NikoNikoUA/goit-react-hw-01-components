@@ -12,7 +12,7 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
     -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
     inset 0 0 40px rgba(0, 0, 0, 0.1);
-  background-color: rgb(244, 240, 240);
+  background-color: rgb(250, 249, 250);
 }
 
 .avatar {
@@ -30,7 +30,7 @@
 }
 
 .tag {
-  color: red;
+  color: black;
   margin-bottom: 10px;
   font-size: 15px;
 }

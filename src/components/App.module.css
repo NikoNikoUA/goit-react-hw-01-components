@@ -28,3 +28,19 @@ img {
   gap: 80px;
   padding: 50px;
 }
+
+::-webkit-scrollbar-thumb {
+  background: #83b1d6;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(187, 220, 239, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8275fc;
+}
