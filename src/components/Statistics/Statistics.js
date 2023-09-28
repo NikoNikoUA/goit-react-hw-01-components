@@ -1,16 +1,10 @@
 import css from './Statistics.module.css';
+import { getRandomHexColor } from '../../Helpers/helpers';
 
 export function Statistics({ title, statistics }) {
-  function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215)
-      .toString(16)
-      .padStart(6, 0)}`;
-  }
-
-  const isTitle = true;
   return (
     <section className={css.stats}>
-      {isTitle && <h2 className={css.title}>{title}</h2>}
+      {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.statistics}>
         {statistics.map(({ id, label, percentage }) => {
           return (

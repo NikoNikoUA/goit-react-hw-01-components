@@ -5,7 +5,7 @@ import { TransactionHistory} from 'components/TransactionHistory/TransactionHist
 import user from 'data-files/user.json';
 import data from 'data-files/data.json';
 import friends from 'data-files/friends.json';
-import transactions from '../data-files/transactions.json';
+import transactions from 'data-files/transactions.json';
 
 import css from './App.module.css'
 
